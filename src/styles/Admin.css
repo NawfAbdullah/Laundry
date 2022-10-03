@@ -1,0 +1,44 @@
+.Admin{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F7F9FF;
+}
+
+.adminNav{
+    width: 100vw;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.adminNav button{
+    margin-right: 50px;
+}
+
+.middleContainer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.pendingList{
+    height: 80vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.pendingList::-webkit-scrollbar {
+    width: 10px;
+}
+
+.pendingList::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 5px;
+  }
+
+.pendingList::-webkit-scrollbar-thumb {
+    background: #5C8DF7;
+    border-radius: 5px;
+}
+  

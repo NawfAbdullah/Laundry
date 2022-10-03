@@ -1,0 +1,39 @@
+.pendingItem{
+    background-color: #F1F1E6;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    width: 60vw;
+    border-radius: 20px;
+    height: 100px;
+    overflow: hidden;
+    padding: 10px 20px;
+    font-family: 'Inter', sans-serif;
+    margin: 10px 0;
+    margin-right: 20px;
+}
+
+.pendingItem div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.pendingItem .student-block h3{
+    color: #18305E;
+}
+
+.pendingItem .student-block p{
+    color: #5C8DF7;
+}
+
+p.progress{
+    color: #00B389;
+}
+
+p.date{
+    color: rgb(182, 182, 182);
+}

@@ -1,0 +1,118 @@
+.washing-machine{
+    border: 2px solid rgb(162, 162, 162);
+    width: 300px;
+    height: 400px;
+    border-radius: 2px;
+    position: relative;
+    overflow-x: visible;
+    background-color: #F1F1E6;
+}
+
+.washing-machine .top{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    border-bottom: 10px solid rgb(162, 162, 162);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.washing-machine .top span{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(162, 162, 162) ;
+    margin: 5px;
+    border-radius: 100%;
+}
+
+.washing-machine .rim{
+    border: 20px solid rgb(132, 132, 132);
+    aspect-ratio: 1/1;
+    width: 50%;
+    position: relative;
+    top: 30%;
+    margin: auto;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.washing-machine .rim .water{
+    background-color: #a5e4f2;
+    height: 100%;
+    width: 100%;
+}
+
+.washing-machine .rim .water .running{
+    width: 200%;
+    position: relative;
+    top: 10%;
+    animation: runningwater 1s ease infinite alternate;
+}
+
+
+
+.washing-machine .rim .water .extra-water{
+    background-color: #0099ff;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+}
+
+.rim.open-rim{
+    position: absolute;
+    z-index: 2;
+    left: 18%;
+    transform-origin: right;
+    animation: opening 500ms ease-in-out 500ms 1 forwards;
+}
+
+.clothes{
+    width: 200px;
+    position: absolute;
+    transform: scale(0.4) skew(20deg);
+    animation: comingOut 500ms ease 750ms forwards;
+}
+
+
+@keyframes comingOut{
+    0%{
+        transform: skew(20deg) scale(0.4);
+        z-index: 0;
+    }
+    100%{
+        transform: skew(0) scale(1);
+        z-index: 20;
+    }
+}
+
+@keyframes opening {
+    0%{
+        transform: rotateY(0) perspective(200px) ;
+    }
+    100%{
+        transform: rotateY(-120deg) perspective(200px);
+    }
+}
+
+@keyframes runningwater {
+    0%{
+        right: 0px;
+    }
+    100%{
+        right: 150px;
+    }
+}
+
+
+.bucket{
+    width: 150px;
+    position: absolute;
+    bottom: -10px;
+    right: -35px;
+}
+

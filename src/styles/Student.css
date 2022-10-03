@@ -1,0 +1,63 @@
+.studentPage{
+    width: 100vw;
+    height: 100vh;
+}
+
+.studentNav{
+        width: 100vw;
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+.studentNav button{
+    margin-right: 50px;
+}
+
+.middleContainer{
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.progressList{
+    position: relative;
+}
+
+.progressList li{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.progressList li span{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    margin: 10px;
+    padding: 5px;
+    border-width: 2px;
+    border-radius: 100%;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.progressList li h5{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+
+.progressList h3{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.6rem;
+    text-align: left;
+    color: #18305E;
+}

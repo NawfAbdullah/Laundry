@@ -1,0 +1,34 @@
+.AuthPage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D2F4F4;
+}
+
+#shirt{
+    display: none;
+}
+
+.innerDiv{
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 5px 25px rgb(182, 182, 182);
+    max-width: 50%;
+    max-height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.innerDiv h1{
+    text-align: center;
+}
+
+.loginform{
+    display: flex;
+    flex-direction: column;
+}
