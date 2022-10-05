@@ -10,7 +10,7 @@ const Student = ()=>{
     const progressTypes = ['You have not given anything','Your clothes are waiting','We are washing your clothes',"We've washed your clothes"]
     useEffect(()=>{
         //get the progress code from backend
-        setProgressCode(2)
+        setProgressCode(1)
     },[])
     return <div className="studentPage">
         <nav className='studentNav' >
