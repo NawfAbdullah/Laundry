@@ -61,3 +61,12 @@
     text-align: left;
     color: #18305E;
 }
+
+@media only screen and (max-width:826px){
+    .studentPage .middleContainer{
+        flex-direction: column;
+    }
+    .studentNav img{
+        width: 40%;
+    }
+}

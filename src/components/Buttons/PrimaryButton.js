@@ -1,7 +1,7 @@
 import '../../styles/buttons.css'
 
-const PrimaryButton = ({children,onClick})=>{
-    return <button className="PrimaryButton" onClick={onClick}>
+const PrimaryButton = ({children,onClick,isDisable})=>{
+    return <button disabled={isDisable!==null?isDisable:false} className="PrimaryButton" onClick={onClick}>
         {children}
     </button>
 }

@@ -7,3 +7,5 @@ loaded washing machine <a href="https://www.flaticon.com/free-icons/washing-mach
 <a href="https://www.flaticon.com/free-icons/forest" title="forest icons">Forest icons created by Freepik - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/tree" title="tree icons">Tree icons created by Vectors Market - Flaticon</a>
 <a href="https://www.flaticon.com/free-icons/tree" title="tree icons">Tree icons created by Vectors Market - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by kmg design - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/tick" title="tick icons">Tick icons created by Alfredo Hernandez - Flaticon</a>

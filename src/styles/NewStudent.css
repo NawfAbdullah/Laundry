@@ -1,0 +1,68 @@
+.add-new-student{
+    background-color: #89a8fc;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.add-new-student *{
+    overflow: visible;
+}
+
+
+.add-new-student .error{
+    color: red;
+    text-align: center;
+}
+
+.add-new-student h1{
+    color: #18305E;
+}
+
+.add-new-student form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    width: 75%;
+}
+
+.add-new-student form input,select{
+    padding: 10px;
+    margin: 5px;
+    border: 3px solid rgb(172, 172, 172);
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: #18305E;
+}
+
+.add-new-student form input:focus{
+    outline: none;
+    border: 3px solid #00B389;
+}
+
+.add-new-student .img-container{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #00B389;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.add-new-student .img-container img{
+    max-width: 300px;
+    max-width: 300px;
+    border-radius: 100%;
+}
+
+.add-new-student form button[type='submit']{
+    background-color: #89a8fc;
+    cursor: pointer;
+}

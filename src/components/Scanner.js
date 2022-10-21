@@ -6,13 +6,24 @@ import PrimaryButton from './Buttons/PrimaryButton'
 const Scanner = ({setScanned})=>{
     const beepSound = new Audio(Beep)
     const [scan,setScan] = useState(true)
-    const handleScan = (data)=>{
+    const handleScan = async (data)=>{
         if(data){
             beepSound.play()
             setScan(false)
             setScanned(true)
-            //set scan to false after sending data.text to backend
-            console.log(data); 
+            setTimeout(()=>{
+                setScan(true)
+            },2000)
+            const formData = new FormData()
+            formData.append('student_id',JSON.parse(data.text).student_id)
+            const response = await fetch('https://crescent-laundry-backend.herokuapp.com/progress/update/',{
+                method:'POST',
+                body:formData,
+                headers:{
+                    'ADMIN-ACCESS-CODE':'b28bd806-158e-485b-a905-f1edae57c153'
+                }
+            })
+            const res = await response.json()
             setScanned(false)
         }
     }

@@ -5,6 +5,7 @@ button{
     border-radius: 20px;
     border: none;
     transition: 500ms;
+    cursor: pointer;
 }
 
 .PrimaryButton{
@@ -18,4 +19,24 @@ button{
 
 .PrimaryButton:active{
     transform: scale(0.7);
+}
+
+.Secondary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: underline;
+    color: rgb(172, 172, 172);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    padding: 10px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:481px){
+    .PrimaryButton{
+        font-size: 1rem;
+        border-radius: 5px;
+    }
 }

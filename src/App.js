@@ -1,19 +1,16 @@
 // import Logo from './assets/images/logo.png'
-import Auth from './pages/Auth';
-import Admin from './pages/Admin';
-import NewStudent from './pages/NewStudent';
-import Student from './pages/Students';
+import { BrowserRouter } from "react-router-dom";
+import AnimatedRoutes from "./pages/TotalRoutes";
+import { UserProvider } from "./utils/UserContext";
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={Logo} alt="logo"/>
-      </header> */}
-      <Auth />
-      {/* <Admin /> */}
-      {/* <Student /> */}
-      {/* <NewStudent /> */}
+      <UserProvider>
+        <BrowserRouter forceRefresh={true}>
+            <AnimatedRoutes />
+        </BrowserRouter>
+      </UserProvider>
     </div>
   );
 }
