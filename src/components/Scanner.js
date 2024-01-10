@@ -15,7 +15,8 @@ const Scanner = ({setScanned})=>{
                 setScan(true)
             },2000)
             const formData = new FormData()
-            formData.append('student_id',JSON.parse(data.text).student_id)
+            console.log(data.text);
+            formData.append('student_id',String(JSON.parse(data.text).student_id))
             const response = await fetch('https://crescent-laundry-backend.herokuapp.com/progress/update/',{
                 method:'POST',
                 body:formData,

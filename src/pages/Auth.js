@@ -59,7 +59,7 @@ const Auth = ()=>{
                     <input type={showPassword?'text':'password'} name='password' placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)}/>
                     <span onClick={()=>{
                         setShowPassword(!showPassword)
-                        }}>{showPassword?<VisibilityIcon style={{color:'rgb(152,152,152)'}} />:<VisibilityOffIcon style={{color:'rgb(152,152,152)'}}/>}</span>
+                        }}>{showPassword?<VisibilityIcon style={{color:'rgb(152,152,152)',cursor:'pointer'}} />:<VisibilityOffIcon style={{color:'rgb(152,152,152)',cursor:'pointer'}}/>}</span>
                 </div>
                 <input disabled={isDisabled} className='PrimaryButton' type='submit' />
                 {error&&<p className='error'>{error}</p>}

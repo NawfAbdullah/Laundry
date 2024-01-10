@@ -40,6 +40,7 @@
 .showqr{
     text-decoration: underline;
     color: rgb(182, 182, 182);
+    cursor: pointer;
 }
 
 .showqr+.code{
